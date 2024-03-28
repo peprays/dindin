@@ -12,4 +12,10 @@ function logar(){
 function cadastro(){
     window.location.href = "cadastro.html";
 }
+function Ftp(){
+    window.location.href = "ftp.html";
+}
+function login(){
+    window.location.href = "login.html";
+}
 
