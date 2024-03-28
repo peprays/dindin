@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(17, 17, 17);;
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+  }
+  
+  .flip-card {
+    width: 425px;
+    height: 270px;
+  
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+  
+    position: relative;
+  
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  #front-card,
+  #back-card {
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+  
+    border-radius: 15px;
+    background: linear-gradient(250deg, #d75413, #838383);
+    box-shadow: 2px 2px 10px 1px #00000010;
+    backface-visibility: hidden;
+  }
+  
+  #front-card .mastercard-logo {
+    width: 90px;
+  
+    position: absolute;
+  
+    right: 15px;
+    top: 15px;
+  }
+  
+  #front-card .chip {
+    position: absolute;
+  
+    left: 50px;
+    top: 30%;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #front-card .chip img {
+    width: 65px;
+  }
+  
+  #front-card .chip .nfc-icon {
+    display: flex;
+    align-items: center;
+  
+    margin-left: 10px;
+  }
+  
+  #front-card .chip .nfc-icon div {
+    width: 2px;
+  
+    border-right: 2px solid #fff;
+    border-radius: 50%;
+  }
+  
+  #front-card .chip .nfc-icon div:nth-child(1) {
+    height: 11px;
+  }
+  
+  #front-card .chip .nfc-icon div:nth-child(2) {
+    height: 14px;
+  }
+  
+  #front-card .chip .nfc-icon div:nth-child(3) {
+    height: 17px;
+  }
+  
+  #front-card .chip .nfc-icon div:nth-child(4) {
+    height: 20px;
+  }
+  
+  #front-card .title-label {
+    position: absolute;
+  
+    left: 50px;
+    bottom: 30px;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #front-card .nubank-logo {
+    width: 60px;
+  }
+  
+  #front-card .title-label span {
+    font-weight: 600;
+    color: #fff;
+    margin-left: 30px;
+  }
+  
+  #back-card {
+    transform: rotateY(180deg);
+  }
+  
+  #back-card .magnetic-stripe {
+    width: 100%;
+    height: 60px;
+  
+    margin-top: 20px;
+    background-color: #c0c0c0;
+  }
+  
+  #back-card .platinum-style {
+    margin: 10px 0 0 15px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #back-card .platinum-style p {
+    margin: 0 0 5px 5px;
+  
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+  }
+  
+  #back-card .platinum-style div {
+    width: 100px;
+    height: 50px;
+  
+    background-color: #c0c0c0;
+    border-radius: 40px;
+  }
+  
+  #back-card .card-number {
+    position: absolute;
+  
+    left: 15px;
+    bottom: 30px;
+  
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #back-card .card-info {
+    position: absolute;
+  
+    bottom: 0px;
+    left: 15px;
+  
+    display: flex;
+    align-items: center;
+  
+    color: #fff;
+  }
+  
+  #back-card .card-info span {
+    font-size: 6px;
+    margin-right: 3px;
+  }
+  
+  #back-card .card-info p {
+    margin-right: 7px;
+    font-size: 16px;
+  }
+
+ 
