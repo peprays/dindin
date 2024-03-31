@@ -19,3 +19,20 @@ function login(){
     window.location.href = "login.html";
 }
 
+window.onload = function() {
+    var saldoElement = document.getElementById("saldo");
+    saldoElement.style.visibility = "hidden";
+};
+
+function toggleBalance() {
+    var saldoElement = document.getElementById("saldo");
+    var toggleButton = document.getElementById("toggleBalance");
+
+    if (saldoElement.style.visibility === "hidden") {
+        saldoElement.style.visibility = "visible";
+        toggleButton.textContent = "Esconder Saldo";
+    } else {
+        saldoElement.style.visibility = "hidden";
+        toggleButton.textContent = "Mostrar Saldo";
+    }
+}

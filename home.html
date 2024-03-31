@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styleH.css">
     <title>DimDim | Saldo</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 <body>
 <nav role="navigation">
@@ -29,10 +30,11 @@
     <img src="img/logo-branca.png" alt="">
   </div>
   <div id="bem-vindo">
-    <h1>Bem-Vindo <spam class="spam">Usuario</spam>! <br><br> Saldo: <spam class="spam">R$1.000.000.000,00</spam></h1>
+    <h1>Bem-Vindo <span class="spam">Usuario</span>! <br><br> Saldo: <span class="spam" id="saldo">R$1.000.000.000,00</span></h1>
+    <img src="img/mostrar-saldo.png" id="toggleBalance" onclick="toggleBalance()">
     <div id="txt">
       <h1>Extrato</h1>
- </div>
+    </div>
   </div>
   <br>
 
