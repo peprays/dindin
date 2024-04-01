@@ -19,20 +19,21 @@ function login(){
     window.location.href = "login.html";
 }
 
-window.onload = function() {
-    var saldoElement = document.getElementById("saldo");
-    saldoElement.style.visibility = "hidden";
-};
+
+
+var saldoRevelado = true; // Variável para controlar se o saldo foi revelado ou não
 
 function toggleBalance() {
     var saldoElement = document.getElementById("saldo");
-    var toggleButton = document.getElementById("toggleBalance");
+    //var toggleButton = document.getElementById("toggleBalance");
 
-    if (saldoElement.style.visibility === "hidden") {
-        saldoElement.style.visibility = "visible";
-        toggleButton.textContent = "Esconder Saldo";
+    if (!saldoRevelado) {
+        // Se o saldo ainda não foi revelado, revela-o
+        saldoElement.textContent = "R$1.000.000.000,00"; // Substitua pelo saldo real do usuário
+        saldoRevelado = true;
     } else {
-        saldoElement.style.visibility = "hidden";
-        toggleButton.textContent = "Mostrar Saldo";
+        // Se o saldo já foi revelado, oculta-o novamente
+        saldoElement.textContent = "**********";
+        saldoRevelado = false;
     }
 }

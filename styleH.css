@@ -139,8 +139,10 @@ body
 #bem-vindo h1{
     color: white;
     margin-top: 140px;
-    display: flex;
+    
 }
+
+
 
 .spam{
     color: #d75413;
@@ -152,7 +154,8 @@ body
   }
 
   #bem-vindo img{
-    width: 10px;
+    width: 30px;
+    cursor: pointer;
   }
 
   #txt{
