@@ -1,3 +1,4 @@
+var cpfRegex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
 function logar(){
     var nome = document.getElementById("nome").value;
     var senha = document.getElementById("senha").value;
@@ -12,9 +13,11 @@ function logar(){
 function cadastro(){
     window.location.href = "cadastro.html";
 }
+
 function Ftp(){
-    window.location.href = "ftp.html";
+    window.location.href = "ftp.html"
 }
+
 function login(){
     window.location.href = "login.html";
 }
@@ -37,3 +40,18 @@ function toggleBalance() {
         saldoRevelado = false;
     }
 }
+
+function enviar(){
+    var cpf = document.getElementById("cpf").value;
+    if(!cpfRegex.test(cpf)){
+        alert("CPF INVALIDO!");
+    }
+    else{
+        alert("CADASTRO REALIZADO COM SUCESSO!");
+    }
+}
+
+
+     
+
+
