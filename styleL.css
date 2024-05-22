@@ -127,4 +127,18 @@ body {
     background-color: #404040;
   }
 
+  #ftp{
+    margin-left: 25%;
+    margin-top: 5%;
+    color: white;
+  }
+
+  a:visited{
+    color: white;
+  }
+
+  #ftp:hover{
+    color: #d75413;
+    transition: 0.5s all;
+  }
 
