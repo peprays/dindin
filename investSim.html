@@ -3,45 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleI.css">
+    <link rel="stylesheet" href="css/styleI.css">
     <title>DimDim | Saldo</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="investimento.js" defer></script>
 </head>
 <body>
 <nav role="navigation">
     <div id="menuToggle">
-
-      <input type="checkbox" />
-     
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <ul id="menu">
-        <a href="home.html"><li>Home</li></a>
-        <a href="investSim.html"><li>Pix</li></a>
-        <a href="cartão.html"><li>Cartão Virtual</li></a>
-        <a href="login.html"><li>Sair</li></a>
-      </ul>
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <a href="home.html"><li>Home</li></a>
+            <a href="investSim.html"><li>Investimento</li></a>
+            <a href="cartão.html"><li>Cartão Virtual</li></a>
+            <a href="login.html"><li>Sair</li></a>
+        </ul>
     </div>
-  </nav>
-  <div id="logo">
+</nav>
+<div id="logo">
     <img src="img/logo-branca.png" alt="">
-  </div>
+</div>
 
-    <div id="txt">
-        <h1>Simulador de Investimento</h1>
-
-        <div>
-            <form>
-                <input type="text" id="nome" placeholder="digite o valor inicial para investir">
-            </form>
-        </div>
-
+<div id="txt">
+    <h1>Simulador de Investimento</h1>
+    <div id="invest">
+        <form id="investForm">
+            <input type="text" id="inicial" placeholder="Digite o valor inicial do investimento">
+            <input type="text" id="mensal" placeholder="Digite o valor mensal do investimento">
+            <input type="text" id="anos" placeholder="Digite o tempo em anos do investimento">
+            <input type="submit" value="Calcular">
+        </form>
+        <h1 id="resuldadoT">O resuldado do seu investimento sera: </h1> <br>
+        <p id="resultado"></p>
     </div>
-
-    
-
+</div>
 </body>
 </html>

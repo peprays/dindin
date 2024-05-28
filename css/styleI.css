@@ -8,6 +8,7 @@ body
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+
 #menuToggle
 {
   display: block;
@@ -194,4 +195,30 @@ body
   
   input[type="text"]:focus {
     width: 150%;
+  }
+
+  #resultado{
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-size: 50px;
+    display: flex;
+    margin-top: 70px;
+    color: #d75413;
+    margin-left: -555px;
+    white-space: nowrap;
+  }
+
+  #resultado p{
+    white-space: nowrap;
+  }
+
+  #invest{
+    display: flex;
+  }
+
+  #invest h1{
+    white-space: nowrap;
+  }
+
+  #resuldadoT{
+    margin-left: 350px;
   }
