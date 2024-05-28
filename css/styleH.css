@@ -185,9 +185,9 @@ body
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-  height: 70px; /* Defina a altura desejada para as células da grade */
-  line-height: 70px; /* Centraliza verticalmente o texto */
-  width: 350px;
+  height: 7.518796992481203vh; /* Defina a altura desejada para as células da grade */
+  line-height: 7.518796992481203vh; /* Centraliza verticalmente o texto */
+  width: 18.626929217668973vw;
   font-size: 17px;
 }
 
