@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleH.css">
+    <link rel="stylesheet" href="styleI.css">
     <title>DimDim | Saldo</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <script src="script.js"></script>
@@ -20,7 +20,7 @@
       
       <ul id="menu">
         <a href="home.html"><li>Home</li></a>
-        <a href="investSim.html"><li>Investimento</li></a>
+        <a href="investSim.html"><li>Pix</li></a>
         <a href="cartão.html"><li>Cartão Virtual</li></a>
         <a href="login.html"><li>Sair</li></a>
       </ul>
@@ -29,21 +29,19 @@
   <div id="logo">
     <img src="img/logo-branca.png" alt="">
   </div>
-  <div id="bem-vindo">
-    <h1>Bem-Vindo <span class="spam">Usuario</span>! <br><br> Saldo: <span class="spam" id="saldo">**********</span></h1>
-    <img src="img/mostrar-saldo.png" id="toggleBalance" onclick="toggleBalance()">
+
     <div id="txt">
-      <h1>Extrato</h1>
-      <div class="grid-container" id="gridPrincipal">
-        <div class="grid-item grid-header">Data Transação</div>
-        <div class="grid-item grid-header">Valor</div>
-        <div class="grid-item grid-header">Tipo</div>
-        <div class="grid-item grid-header">Descrição</div>
+        <h1>Simulador de Investimento</h1>
+
+        <div>
+            <form>
+                <input type="text" id="nome" placeholder="digite o valor inicial para investir">
+            </form>
+        </div>
+
     </div>
-    <script src="array.js"></script>
-    </div>
-  </div>
-  <br>
+
+    
 
 </body>
 </html>
