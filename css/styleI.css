@@ -197,6 +197,16 @@ body
     width: 150%;
   }
 
+  input[type="submit"]:hover {
+    background-color: #d75413;
+    color: white;
+    transition: 1s all;
+  }
+
+  input[type="submit"]{
+    color: white;
+  }
+
   #resultado{
     font-family: "Avenir Next", "Avenir", sans-serif;
     font-size: 50px;
